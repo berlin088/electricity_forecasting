@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; }
+        h1, h2, h3 { color: #333; }
+        h1 { font-size: 24px; }
+        h2 { font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        img { max-width: 100%; height: auto; margin-top: 10px; margin-bottom: 10px; }
+        .interpretation { font-style: italic; background-color: #f9f9f9; padding: 10px; border-left: 3px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p><strong>Author:</strong> {{ author }}</p>
+    <p><strong>Date:</strong> {{ date }}</p>
+    <p><strong>City:</strong> {{ city }}</p>
+    <p><strong>Parameters:</strong></p>
+    <ul>
+        <li><strong>History Window:</strong> {{ history_window }} days</li>
+        <li><strong>Weather Data Used:</strong> {{ with_weather }}</li>
+    </ul>
+
+    {{ content_html | safe }}
+
+</body>
+</html>
