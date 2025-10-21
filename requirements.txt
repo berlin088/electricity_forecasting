@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+requests
+lightgbm
+tabulate
+weasyprint
+jinja2
+markdown-it-py
